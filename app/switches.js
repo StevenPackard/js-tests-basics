@@ -7,9 +7,51 @@
 // output: 7
 
 function daysPosition(day, offset) {
-    switch (day.offset == false) {
-        case value:
+    let weekTrue = [1, 2, 3, 4, 5, 6, 7]
+    let weekFalse = [7, 1, 2, 3, 4, 5, 6]
+    switch (day, offset) {
+        case "sunday", true:
+            return weekTrue[0]
+            break;
+        case "monday", true:
+            return weekTrue[1]
+            break;
+        case "tuesday", true:
+            return weekTrue[2]
+            break;
+        case "wednesday", true:
+            return weekTrue[3]
+            break;
+        case "thursday", true:
+            return weekTrue[4]
+            break;
+        case "friday", true:
+            return weekTrue[5]
+            break;
+        case "saturday", true:
+            return weekTrue[6]
+            break;
 
+        case "sunday", false:
+            return weekFalse[6]
+            break;
+        case "monday", false:
+            return weekFalse[5]
+            break;
+        case "tuesday", false:
+            return weekFalse[4]
+            break;
+        case "wednesday", false:
+            return weekFalse[3]
+            break;
+        case "thursday", false:
+            return weekFalse[2]
+            break;
+        case "friday", false:
+            return weekFalse[1]
+            break;
+        case "saturday", false:
+            return weekFalse[0]
             break;
 
         default:
@@ -35,7 +77,14 @@ function daysPosition(day, offset) {
  */
 
 function golfScore(score, par) {
+    switch (score, par) {
+        case value:
 
+            break;
+
+        default:
+            break;
+    }
 }
 
 
@@ -62,3 +111,6 @@ let count = 0
 function cardCounter(card) {
 
 }
+
+
+daysPosition("sunday", true)
